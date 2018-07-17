@@ -1,4 +1,4 @@
-# liblba-dev-env
+# liblab-dev-env
 UTC Library LibLab Development Environment
 
 1. Install VirtualBox https://www.virtualbox.org/wiki/Downloads
