@@ -36,4 +36,4 @@ fi
 
 setenforce 0
 echo "use 192.168.33.10"
-echo "be sure to 'git pull' in html directory"
+echo "be sure to 'git pull' in liblab directory"
