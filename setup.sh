@@ -35,5 +35,5 @@ cd ~/
 fi
 
 setenforce 0
-echo "use 192.168.33.10"
+echo "use 192.168.33.10 OR localhost:8080"
 echo "be sure to 'git pull' in liblab directory"
