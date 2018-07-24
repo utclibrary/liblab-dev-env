@@ -8,4 +8,5 @@ UTC Library LibLab Development Environment
 5. From home directory, clone the liblab code (git clone https://github.com/utclibrary/liblab.git)
 5. Clone this repo (git clone https://github.com/utclibrary/liblab-dev-env )
 6. cd liblab-dev-env
-7. vagrant up
+7. vagrant plugin install vagrant-vbguest
+8. vagrant up
