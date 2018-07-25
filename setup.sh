@@ -21,7 +21,7 @@ mysql -u root LuptonDB < /vagrant/LuptonDB.sql;
 mysql> GRANT ALL PRIVILEGES ON LuptonDB.* TO 'root'@'localhost';
 echo "creating default db connection file ..."
 mkdir -p /var/www/private
-echo -ne "[database]\nservername = localhost\nusername = root\npassword = \ndbname = LuptonDB\n" > config.ini
+echo -ne "[database]\nservername = localhost\nusername = root\npassword = \n" > config.ini
 cp config.ini /var/www/private/config.ini
 echo "installing git ..."
 yum -y install git
