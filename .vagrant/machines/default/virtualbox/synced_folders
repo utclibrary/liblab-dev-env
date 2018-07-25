@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"C:/Users/ckg289/liblab-dev-env","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}},"virtualbox":{"/var/www/html/":{"guestpath":"/var/www/html","hostpath":"C:/Users/ckg289/liblab","disabled":false,"__vagrantfile":true}}}
