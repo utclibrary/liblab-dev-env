@@ -3,7 +3,9 @@
 # Update packages
 echo "Running yum update..."
 yum -y update
-echo "installing PHP 7 ..."
+echo "Installing editors ..."
+yum -y install nano vim
+echo "Installing PHP 7 ..."
 yum -y install epel-release yum-utils
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum-config-manager --enable remi-php72
@@ -12,20 +14,20 @@ echo "Installing Apache ..."
 yum -y install httpd
 echo "Start Apache"
 systemctl start httpd
-echo "installing MariaDB ..."
+echo "Installing MariaDB ..."
 yum -y install mariadb-server
 systemctl start mariadb
 systemctl status mariadb
-mysql -u root -e "create database LuptonDB";
+mysql -u root -e "Creating database LuptonDB";
 mysql -u root LuptonDB < /vagrant/LuptonDB.sql;
 mysql> GRANT ALL PRIVILEGES ON LuptonDB.* TO 'root'@'localhost';
-echo "creating default db connection file ..."
+echo "Creating default db connection file ..."
 mkdir -p /var/www/private
 echo -ne "[database]\nservername = localhost\nusername = root\npassword = \n" > config.ini
 cp config.ini /var/www/private/config.ini
-echo "installing git ..."
+echo "Installing git ..."
 yum -y install git
-echo "Let's get our git files"
+echo "Getting our git files"
 if [ -z "$(ls -A /var/www/html/)" ]; then
    git clone https://github.com/utclibrary/liblab.git /var/www/html/
 else
