@@ -18,9 +18,12 @@ echo "Installing MariaDB ..."
 yum -y install mariadb-server
 systemctl start mariadb
 systemctl status mariadb
-mysql -u root -e "Creating database LuptonDB";
+mysql -u root -e "create database LuptonDB";
 mysql -u root LuptonDB < /vagrant/LuptonDB.sql;
 mysql> GRANT ALL PRIVILEGES ON LuptonDB.* TO 'root'@'localhost';
+mysql -u root -e "create database Dates";
+mysql -u root LuptonDB < /vagrant/Dates.sql;
+mysql> GRANT ALL PRIVILEGES ON Date.* TO 'root'@'localhost';
 echo "Creating default db connection file ..."
 mkdir -p /var/www/private
 echo -ne "[database]\nservername = localhost\nusername = root\npassword = \n" > config.ini
