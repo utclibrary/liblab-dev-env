@@ -22,8 +22,11 @@ mysql -u root -e "create database LuptonDB";
 mysql -u root LuptonDB < /vagrant/LuptonDB.sql;
 mysql> GRANT ALL PRIVILEGES ON LuptonDB.* TO 'root'@'localhost';
 mysql -u root -e "create database Dates";
-mysql -u root LuptonDB < /vagrant/Dates.sql;
+mysql -u root Dates < /vagrant/Dates.sql;
 mysql> GRANT ALL PRIVILEGES ON Date.* TO 'root'@'localhost';
+mysql -u root -e "create database Login";
+mysql -u root Login < /vagrant/Login.sql;
+mysql> GRANT ALL PRIVILEGES ON Login.* TO 'root'@'localhost';
 echo "Creating default db connection file ..."
 mkdir -p /var/www/private
 echo -ne "[database]\nservername = localhost\nusername = root\npassword = \n" > config.ini
