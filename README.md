@@ -2,7 +2,7 @@
 UTC Library LibLab Development Environment
 
 1. Install VirtualBox https://www.virtualbox.org/wiki/Downloads
-2. Install VirtualBox Guest Additions http://download.virtualbox.org/virtualbox (find your version)
+2. Install VirtualBox Guest Additions http://download.virtualbox.org/virtualbox (find your version) need more instructions
 3. Install Vagrant https://www.vagrantup.com/
 4. Install Git https://git-scm.com/ (we will use git bash - use CTRL+SHIFT+INS to paste)
 5. From home directory, clone the liblab code (git clone https://github.com/utclibrary/liblab.git)
