@@ -14,7 +14,7 @@ INSTAll:
 9. go to 192.168.33.10 OR localhost:8080 browser
 
 Notes:
- ~/liblab/ is root for html
-To stop: vagrant halt
-To restart: vagrant up > vagrant provision
-You may also vagrant destroy to completely rebuild the server
+-  ~/liblab/ is root for html
+- To stop: vagrant halt
+- To restart: vagrant up > vagrant provision
+- You may also vagrant destroy to completely rebuild the server
