@@ -1,7 +1,7 @@
 # liblab-dev-env
 UTC Library LibLab Development Environment
 
-INSTAll:
+Install:
 1. Install VirtualBox https://www.virtualbox.org/wiki/Downloads
 2. Install VirtualBox Guest Additions http://download.virtualbox.org/virtualbox (find your version) need more instructions
 3. Install Vagrant https://www.vagrantup.com/
