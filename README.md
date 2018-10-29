@@ -10,7 +10,7 @@ Install:
 6. cd liblab-dev-env
 7. vagrant plugin install vagrant-vbguest
 8. vagrant up
-9. go to 192.168.33.10 OR localhost:8080 browser
+9. go to 192.168.33.10 OR localhost:8080 (in web browser)
 
 Notes:
 -  ~/liblab/ is root for html
