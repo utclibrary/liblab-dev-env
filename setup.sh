@@ -43,7 +43,9 @@ echo "Installing git ..."
    #git pull
 #cd ~/
 #fi
-
+echo "see https://blog.benjie.me/connect-mysql-workbench-with-mysql-mariadb-in-vagrant-over-ssh/ to set up MySQL Workbench connection"
+echo " run 'vagrant ssh-config' to configure MySQL Workbench"
+echo " if warning on second connect modify ~/.ssh/know_host per https://www.thegeekdiary.com/how-to-fix-the-error-host-key-verification-failed/"
 setenforce 0
-echo "use 192.168.33.10 OR localhost:8080"
+echo "use http://192.168.33.10 OR http://localhost:8080"
 echo "be sure to 'git pull' in liblab directory"
