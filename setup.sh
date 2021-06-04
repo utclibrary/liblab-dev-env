@@ -10,7 +10,7 @@ echo "Installing PHP 7 ..."
 yum -y install epel-release yum-utils
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum-config-manager --enable remi-php72
-yum -y install php php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql
+yum -y install php php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql php-xml
 echo "Installing Apache ..."
 yum -y install httpd
 echo "Modify php.ini to show php errors"
