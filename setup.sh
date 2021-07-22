@@ -6,10 +6,11 @@ yum -y update
 echo "Installing editors ..."
 yum -y install nano vim unzip
 unzip *.zip
-echo "Installing PHP 7 ..."
+echo "Installing PHP 8 ..."
 yum -y install epel-release yum-utils
 yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-yum-config-manager --enable remi-php72
+yum-config-manager --disable 'remi-php*'
+yum-config-manager --enable remi-php80
 yum -y install php php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql php-xml
 echo "Installing Apache ..."
 yum -y install httpd
