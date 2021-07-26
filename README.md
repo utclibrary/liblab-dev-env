@@ -9,9 +9,8 @@ Install:
 5. Clone this repo (git clone https://github.com/utclibrary/liblab-dev-env )
 6. cd liblab-dev-env
 7. download and rename  DBs from Synology > plibmysql21 > daily LuptonDB, Login, DBofDBs, and Dates (.sql) to this folder
-8. vagrant plugin install vagrant-vbguest
-9. vagrant up
-10. go to 192.168.33.10 OR localhost:8080 (in web browser)
+8. vagrant up
+9. go to 192.168.33.10 OR localhost:8080 (in web browser)
 
 Notes:
 -  ~/liblab/ is root for html
