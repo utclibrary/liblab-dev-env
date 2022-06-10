@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Update packages
 echo "Running yum update..."
 yum -y update
@@ -14,6 +13,7 @@ yum-config-manager --enable remi-php80
 yum -y install php php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql php-xml
 echo "Installing Apache ..."
 yum -y install httpd
+# sed -i 's/index.html/index.php/g' /etc/httpd/config/httpd.conf
 echo "Modify php.ini to show php errors"
 echo "display_errors = On" >> /etc/php.ini
 echo "Start Apache"
@@ -52,5 +52,5 @@ echo "see https://blog.benjie.me/connect-mysql-workbench-with-mysql-mariadb-in-v
 echo " run 'vagrant ssh-config' to configure MySQL Workbench"
 echo " if warning on second connect modify ~/.ssh/know_host per https://www.thegeekdiary.com/how-to-fix-the-error-host-key-verification-failed/"
 setenforce 0
-echo "use http://192.168.33.10 OR http://localhost:8080 OR http://liblab.local"
+echo "use http://liblab.local"
 echo "be sure to 'git pull' in liblab directory"
